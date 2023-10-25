@@ -1,11 +1,14 @@
 const Formulario = () => {
     return ( 
         <div className="md:w-1/2 lg:w-2/5 mx-5">
-            <p>Añade pacientes y {''}
+            <h2 className="font-black text-3xl text-center">Seguimiento Pacientes</h2>
+            <p className="text-lg mt-5 text-center mb-10">Añade pacientes y {' '}
                 <span className="text-indigo-600 font-bold"> Administralos</span>
             </p>
 
-            <form>
+            <form
+                className="bg-white shadow-md rounded-lg py-10 px-5 mb-10"
+                >
                 <div className="mb-5">
                     <label>Nombre Mascota</label>
                     <input
