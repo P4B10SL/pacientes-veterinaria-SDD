@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Error from './Error';
 
-const Formulario = (pacientes, setPacientes ) => {
+const Formulario = ({ pacientes, setPacientes} ) => {
 
     const [nombre, setNombre] = useState('');
     const [propietario, setPropietario] = useState('');
@@ -28,7 +28,7 @@ const Formulario = (pacientes, setPacientes ) => {
                 date,
                 sintomas
             }
-           setPacientes(...pacientes.pacientes, objetoPaciente);
+           setPacientes([...pacientes, objetoPaciente]);
 
             // Reiniciar el formulario
             setNombre('');

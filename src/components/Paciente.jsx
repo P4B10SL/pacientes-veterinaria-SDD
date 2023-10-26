@@ -1,6 +1,6 @@
 
 
-const Paciente = (paciente, SetPaciente) => {
+const Paciente = ({paciente, SetPaciente}) => {
 
     const { nombre, propietario, email, date, sintomas} = paciente;
     return ( 
@@ -11,7 +11,7 @@ const Paciente = (paciente, SetPaciente) => {
             <p className="font-bold mb-3 text-gray-700 uppercase">Propietario:</p>
             <span className="font-normal normal-case">{propietario}</span>
 
-            <p className="font-bold mb-3 text-gray-700 uppercase">setEmail:</p>
+            <p className="font-bold mb-3 text-gray-700 uppercase">Email:</p>
             <span className="font-normal normal-case">{email}</span>
 
             <p className="font-bold mb-3 text-gray-700 uppercase">Fecha de Alta::</p>

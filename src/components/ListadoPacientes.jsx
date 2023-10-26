@@ -1,6 +1,6 @@
-import Pacientes from "./Paciente";
+import Paciente from "./Paciente";
 
-const ListadoPacientes = ( pacientes, setPacientes ) => {
+const ListadoPacientes = ({pacientes} ) => {
     console.log(pacientes)
     return ( 
         
@@ -11,11 +11,11 @@ const ListadoPacientes = ( pacientes, setPacientes ) => {
             <p className="texrt-xl mt-5 mb-10 text-center">Pacientes y Citas</p>
 
             {
-                pacientes.pacientes.map( paciente => (
-                    <Pacientes
+                pacientes.map( paciente => (
+                    <Paciente
                         key={paciente.id}
                         paciente={paciente}
-                        setPacientes={setPacientes}
+                
                     />
                 ))}
         </div>
